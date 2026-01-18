@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 const ANSWERS = ["Iya", "Coba Lagi", "Mungkin Saja", "Tidak", "YNTKTS"];
 
@@ -11,7 +10,7 @@ const AUDIO_FILES: Record<string, string> = {
 	YNTKTS: "/audio/yntkts.mp3",
 };
 
-function App() {
+function Home() {
 	const [answer, setAnswer] = useState<string | null>(null);
 	const [isShaking, setIsShaking] = useState(false);
 
@@ -55,4 +54,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Home;
